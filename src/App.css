@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+main {
+  padding: 36px 0px 0px 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-section {
+    max-width: 550px;
+    margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
   color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header--image {
+  height: 100%;
+  margin-right: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header--title {
+  font-size: 20px;
+  margin-right: auto;
+}
+
+.header--project {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.form--input {
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 5px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.meme--image {
+  max-width: 100%;
+}
+
+
+/* CONTACT SECTION STYLING */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 85vh;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-centre {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-centre-title h2 {
+    font-weight: 600;
+    color: #a363a3;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-centre-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-centre textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs::placeholder {
+    color: grey;
+}
+
+.contact-centre button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    width: 400px;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
